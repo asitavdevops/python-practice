@@ -1,0 +1,145 @@
+''' Python dingle line comment used # and multiline comment used ''/'
+Python will ignore them'''
+
+print("Hello World")
+#print("My name is asitave")
+'''print("Hello world")'''
+
+'''Rules for Python variables:
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (age, Age and AGE are three different variables)
+A variable name cannot be any of the Python keywords.'''
+
+_myname = "Asitav Pattanaik"
+print(_myname)
+my_age = 30
+print(my_age)
+
+#Camel Case : Each word, except the first, starts with a capital letter
+#Pascal Case : Each word starts with a capital letter
+#Snake Case : Each word is separated by an underscore character
+
+Myvariablename ="John"
+MyDateOfBirth = "16/06/1988"
+place_born = "Cuttack"
+
+print(Myvariablename," ",MyDateOfBirth," ",place_born)
+
+#Variable assignment with mutiple values - Python allows you to assign values to multiple variables in one line
+a,b,c =["Hello", 30 , "World"]
+print(a,b,c)
+
+#Unpack a Collection : extract the values into variables of collection of values in a list, tuple .
+fruits =["Apple", "Orange", "Banana"]
+x,y,z = fruits
+print(x,y,z) 
+
+#Global Varibale : Global variable declared outside a function incase inside function use globa explicitly.
+x = "Global Var"
+
+def _my_var():
+    y = "Local variable"
+    print(x)
+    print(y)
+    global gv 
+    gv = "gv variable in function"
+_my_var()
+print(gv)
+
+#Python Data Types : Text Type(str) , Numeric Types(int, float, complex),Sequence Types(list, tuple, range),
+#Mapping Type(dict),Set Types(set, frozenset),Boolean Type(bool),Binary Types(bytes, bytearray, memoryview),
+#none Type(NoneType)
+
+#Str example 
+_xstr = "Hello Python"
+_ystr = str("Hello World")
+print(_xstr,_ystr)
+print(type(_xstr))
+
+#Numeric Types
+#Int example 
+_xint = 20
+_yint = int(30)
+print(_xint,_yint)
+print(type(_xint),type(_yint))
+
+#Float data type
+_xflot = 40.50
+_yflot = float(30.35)
+print(_xflot,_yflot)
+print(type(_xflot),type(_yflot))
+
+#Complex -Python uses j for imaginary numbers ,complex(a, b) means a + bj
+_xcom = 1j
+_ycom = complex(0,3j)
+
+print(_xcom,_ycom)
+print(type(_xcom),type(_ycom))
+
+#list
+xlist = ['apple','orange','mango']
+ylist = list(("Cat","Rat","Frog"))
+print(xlist,ylist)
+print(type(xlist),type(ylist))
+
+#tuple
+xtuple = ('AA',"BB","CC")
+ytuple = tuple(("KK","MM","ZZ"))
+print(xtuple,ytuple)
+print(type(xtuple),type(ytuple))
+
+#range -range() is used to generate a sequence of numbers, most commonly for loops.
+xrange = range(10)
+print(xrange)
+print(type(xrange))
+
+for i in range(10) :
+    print(i)
+
+#dict - dictionary (dict) is used to store and manage data as key–value pairs. 
+# It lets you look up values quickly using a key instead of an index.
+
+xdict = {"name" : "John", "Age" : 24}
+ydict = dict(name="joMohan", age=20)
+print(xdict,ydict)
+print(type(xdict),type(ydict))
+
+#set -set is used to store a collection of unique, unordered values.Not allow duplicates and Is mutable
+xset = {"apple","banana","cherry","apple"}
+yset = set(('cat',"mat","cat","rat"))
+print(xset,yset)
+print(type(xset),type(yset))
+
+#frozenset - frozenset is just like a set, but immutable (cannot be changed after creation).
+xset = frozenset({"apple","banana","cherry","apple"})
+yset = frozenset(('cat',"mat","cat","rat"))
+print(xset,yset)
+print(type(xset),type(yset))
+
+#bool -checks whether a value is “truthy” or “falsy” and returns True or False
+xbool =bool(5)
+ybool =bool()
+print(xbool,ybool)
+
+#byte - used to store binary data — raw sequences of numbers between 0 and 255.
+b = bytes([65, 66, 67])
+print(b)
+
+#memoryview - lets you access and manipulate binary data without copying it.
+#It gives a view into existing memory instead of creating new objects.
+x = memoryview(bytes(5))
+
+#display x:
+print(x)
+
+#display the data type of x:
+print(type(x)) 
+
+
+
+
+
+
+
