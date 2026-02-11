@@ -54,4 +54,18 @@ print(x)
 print(y)
 print(z)
 
+#Casting 
+#Create a variable x with the integer value 1
+x =1
+#Convert x to a float and store it in a
+a = float(x)
+#Convert x to a string and store it in b
+b = str(x)
+#Print a, b, and their types
+print(x,' ',a,'',b)
+print(type(x))
+print(type(a))
+print(type(b))
+
+
 
