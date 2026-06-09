@@ -88,7 +88,7 @@ if hg >= 120:
     if want_photo == "yes":
         #bill = bill + 3
         bill += 3
-    print(f"Your Bill is {bill}")
+    print(f"Your Bill is ${bill}")
 
 else:
     print("Hight below 120 CM are not eligible for a ride")
