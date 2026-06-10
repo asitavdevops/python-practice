@@ -136,3 +136,22 @@ if condition1 & condition2 & condition3:
 else:
     do B
 """
+
+print("Welcome to Roller costar ride !!!")
+hg = int(input("Enter your height in CM : \n"))
+age = int(input("Enter you age !! \n"))
+
+if hg >= 120:
+    print("Great, you are eligible for ride")
+    if age < 12:
+        print("Pay $5 for the ride")
+    elif age > 18:
+        print("Pay $12 for the ride")
+    elif age >= 45 & age <= 60:
+        print("PFree Ride")
+    
+    else:
+        print("Pay $7")
+
+else:
+    print("Hight below 120 CM are not eligible for a ride")
