@@ -14,10 +14,10 @@ if hg >= 120:
 else:
     print("You cant enter the ride !! Sorry")   
 
-modulo operator:
+#modulo operator:
 print(f"{10%2},{10%3}")
 
-Find Even or odd number
+#Find Even or odd number
 Num = int(input("Enter a Number !! :\n"))
 if Num % 2 == 0:
     print("Its a Even Number")
@@ -129,7 +129,7 @@ if extra_cheese == "Y":
     
 print(f"Total bill you pay ${bill}")
 
-Logical Operator :
+#Logical Operator :
 """
 if condition1 & condition2 & condition3:
     do A
@@ -145,7 +145,7 @@ if hg >= 120:
     print("Great, you are eligible for ride")
     if age < 12:
         print("Pay $5 for the ride")
-    elif age > 18:
+    elif age >= 18 & age <= 44:
         print("Pay $12 for the ride")
     elif age >= 45 & age <= 60:
         print("PFree Ride")
