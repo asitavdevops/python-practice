@@ -4,8 +4,8 @@
 random_integer = random.randint(0, 20)
 print(random_integer)
 
-random.random() - Return the next random floating-point number in the range 0.0 <= X < 1.0
-random.uniform(a, b)-Return a random floating-point number N such that a <= N <= b 
+#random.random() - Return the next random floating-point number in the range 0.0 <= X < 1.0
+#random.uniform(a, b)-Return a random floating-point number N such that a <= N <= b 
 random_number_0_to_1 = random.random() * 10
 print(random_number_0_to_1)
 
