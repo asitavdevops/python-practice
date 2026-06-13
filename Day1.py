@@ -1,3 +1,4 @@
+"""
 #Printing :
 
 # print('Hello world !') #python '' or "" is also used for defining strings
@@ -34,3 +35,7 @@ print(f"{GREEN}Click Run to run the final project you will build{RESET}")
 city=input("What is the name of the city you Grow up in :\n")
 pet_name=input("What's your Pet name :\n")
 print("Your band name could be :" + city + " " + pet_name)
+
+"""
+
+

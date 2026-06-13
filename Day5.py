@@ -63,7 +63,7 @@ for number in range( 1, 101 ):
 print(f"sum of number from 1 to 100: {final_val}")
 
 """
-
+"""
 #Project : Python password Generator :
 import random
 
@@ -124,5 +124,7 @@ for char in password:
     final_pwd += char
 print(f"code Generated password recomendation to use : \n {final_pwd}")
 
+
+"""
 
 
