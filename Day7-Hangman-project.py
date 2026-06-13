@@ -1,6 +1,7 @@
 # Game - https://appbrewery.github.io/python-day7-demo/
 
 import random
+from hangman_wordlist import word_list
 
 stages = [
 '''

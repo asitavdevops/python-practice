@@ -1,0 +1,22 @@
+word_list = [
+    "apple", "banana", "orange", "grapes", "mango",
+    "peach", "pear", "cherry", "lemon", "papaya",
+    "camel", "baboon", "tiger", "lion", "elephant",
+    "zebra", "monkey", "rabbit", "giraffe", "panda",
+    "school", "college", "teacher", "student", "library",
+    "python", "program", "computer", "keyboard", "monitor",
+    "internet", "website", "coding", "developer", "software",
+    "hardware", "network", "database", "algorithm", "function",
+    "variable", "package", "terminal", "project", "github",
+    "docker", "kubernetes", "jenkins", "linux", "ubuntu",
+    "amazon", "google", "microsoft", "oracle", "devops",
+    "football", "cricket", "tennis", "hockey", "badminton",
+    "mountain", "river", "ocean", "forest", "desert",
+    "holiday", "journey", "airport", "station", "travel",
+    "morning", "evening", "sunday", "monday", "friday",
+    "delivery", "hospital", "doctor", "nurse", "medicine",
+    "chocolate", "biscuit", "sandwich", "hamburger", "pizza",
+    "friend", "family", "brother", "sister", "father",
+    "mother", "uncle", "aunt", "village", "country",
+    "science", "history", "mathematics", "biology", "chemistry"
+]
