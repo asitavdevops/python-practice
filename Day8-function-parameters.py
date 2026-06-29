@@ -92,7 +92,9 @@ calculate_love_score("Asitav Pattanaik","Supriya Singh")
 #fruits["apple", "Orange","grape"] -->fruits.index("orange") = 1
 
 #Coading Project Caesar Cipher .
-
+#Todo 1- import the logo
+import art
+print(art.logo)
 alphabets = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g',
     'h', 'i', 'j', 'k', 'l', 'm',
@@ -100,13 +102,9 @@ alphabets = [
     't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
 
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt \n").lower()
-text = input("provide your message: \n").lower()
-shift =int(input("Type the shift number: \n"))
 
+"""
 #TODO 1- create a function called encrypt() that takes original text  and shift number as 2 inputs.
-
-
 def encrypt(original_text, shift_amount):
     cipher_text = ""
 
@@ -118,9 +116,11 @@ def encrypt(original_text, shift_amount):
         #Cipher_text += alphabets[shifted_position]
     
     print(f"Here is the Encrypted result : {cipher_text}")
+"""
 
+
+"""
 #encrypt(original_text=text ,shift_amount=shift) 
-
 def decrypt(original_text, shift_amount):
     output_text = ""
 
@@ -133,24 +133,46 @@ def decrypt(original_text, shift_amount):
     
     print(f"Here is the Encrypted result : {output_text}")
 
+"""
+
 
 #Now use create a final function call ceasar and integrate both encrypt & decrypt function in it 
 def Caesar(original_text, shift_amount, encrypt_or_decrypt):
     output_text = ""
-
+    if encrypt_or_decrypt == "encode":
+               shift_amount *= -1
     for letter in original_text:
-        
-        if encrypt_or_decrypt == "encode":
-            shift_amount *= -1
-        shifted_position = alphabets.index(letter) + shift_amount
-        shifted_position = shifted_position % len(alphabets) #Handling when if you forward from z by 9 place (IndexError: list index out of range)
+        #Todo 2- If user input number/Symbols/spaces
+        if letter not in alphabets:
+            output_text += letter
+        else:
+            
+               shifted_position = alphabets.index(letter) + shift_amount
+               shifted_position = shifted_position % len(alphabets) #Handling when if you forward from z by 9 place (IndexError: list index out of range)
         #shifted_position %= len(alphabets)
-        output_text = output_text + alphabets[shifted_position]
+               output_text = output_text + alphabets[shifted_position]
         #Cipher_text += alphabets[shifted_position]
     
     print(f"Here is the {encrypt_or_decrypt}d result : {output_text}")
 
+    
+
+#Restart the Cipher program .
+should_continue = True
+
+while should_continue:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt \n").lower()
+    text = input("provide your message: \n").lower()
+    shift =int(input("Type the shift number: \n"))
+    
     Caesar(original_text=text, shift_amount=shift ,encrypt_or_decrypt=direction)
+
+    restart = input("Type 'Yes' if youwant to continue . Otherwise type 'No' .\n").lower()
+    if restart == "no":
+        should_continue == False
+        print("GoodBye !!!")
+
+
 
 
 
